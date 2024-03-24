@@ -7,17 +7,15 @@ function esNumeroPrimo(numero) {
   // solo es divisible por sí mismo y por 1.
   // Tu código:
  
-  let i = i > 2;
-  if (numero % i === 0 ) {
-    return false
-} else {
-  return true
-}
-}
-
-esNumeroPrimo(8)
-esNumeroPrimo(9)
-esNumeroPrimo(10)
-esNumeroPrimo(11)
+  if (numero <= 1) {
+    return false;
+  }
+  for (let i = 2; i <= numero / 2; i++) {
+    if (numero % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
 
 module.exports = esNumeroPrimo;

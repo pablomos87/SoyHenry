@@ -4,7 +4,7 @@ function esFechaValida(fecha) {
   // Si es así, retorna true, sino retorna false.
   // Tu código:
   
-  if (fecha instanceof Date) {
+  if (fecha instanceof Date && !isNaN(fecha)) {
     return true;
   } else {
     return false; 

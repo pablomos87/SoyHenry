@@ -6,8 +6,12 @@ function mayoriaDeEdad(edad) {
   if (edad >= 18) {
     return ('Allowed')
 } else {
-  return('Not Allowed');
+  return('Not allowed');
 }
 };
+
+mayoriaDeEdad(18)
+mayoriaDeEdad(35)
+mayoriaDeEdad(7)
 
 module.exports = mayoriaDeEdad;

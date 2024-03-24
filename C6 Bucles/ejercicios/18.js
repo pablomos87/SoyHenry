@@ -8,4 +8,11 @@ function productoEntreNúmeros(a, b) {
     return (multiplicacion)
 };
 
+
+productoEntreNúmeros(1, 5)
+productoEntreNúmeros(2, 4)
+productoEntreNúmeros(5, 5)
+productoEntreNúmeros(0, 10)
+productoEntreNúmeros(-5, 5)
+
 module.exports = productoEntreNúmeros;

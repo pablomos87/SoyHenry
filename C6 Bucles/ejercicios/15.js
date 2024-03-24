@@ -6,19 +6,19 @@ function obtenerDiaSemana(numero) {
   // Si el número no corresponde a un día de la semana, retorna
   // el string "No es un dia de la semana"
   // Tu código:
-  if  (numero < 1 || numero >  7 ) {
+  if  (typeof numero !== 'number' || numero < 1 || numero > 7) {
     return "No es un dia de la semana";
   } else {
-    const diasDeLaSemana = [
+    let diasDeLaSemana = [
       'Lunes',
       'Martes',   
-      'Miércoles',
+      'Miercoles',
       'Jueves',        
       'Viernes',      
-      'Sábado',                
+      'Sabado',                
       'Domingo'              
      ];
-     const dia = diasDeLaSemana[numero - 1];
+     let dia = diasDeLaSemana[numero - 1];
   return dia.charAt(0).toUpperCase() + dia.slice(1);
 }
 };
